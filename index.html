@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="body">
+        <div class="cont_bg">
+            <div class="logo_bg">
+                <img src="./images/odin_logo.png" alt="odin logo" height="120px" width="100px">
+                <span>ODIN</span>
+            </div>
+        </div>
+        <div class="cont_form">
+            <div class="form_elt first">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dream.<br>
+                Sign up now to get started. <br><br>
+                You know you want to.
+</p>
+            </div>
+            <form action="">
+                <div class="form_elt second">
+                <!-- <p>Lets do it</p> -->
+                    <p class="form_head">Let's do this!</p>
+                    <div class="sum_form">
+                        <div>
+                            <p>FIRST NAME</p>
+                            <input type="text" required><br>
+                            <span class="error"></span>
+                        </div>
+                        <div>
+                            <p>LAST NAME</p>
+                            <input type="text" required><br>
+                            <span class="error"></span>
+                        </div>
+                    </div>
+                    <div class="sum_form">
+                        <div>
+                            <p>EMAIL</p>
+                            <input type="email" required><br>
+                            <span class="error"></span>
+                        </div>
+                        <div>
+                            <p>PHONE NUMBER</p>
+                            <input type="tel" required><br>
+                            <span class="error"></span>
+                        </div>
+                    </div>
+                    <div class="sum_form">
+                        <div>
+                            <p>PASSWORD</p>
+                            <input type="password" required id="password"><br>
+                            <span class="error" id="password_error"></span>
+                        </div>
+                        <div>
+                            <p>CONFIRM PASSWORD</p>
+                            <input type="password" required id="conf_password"><br>
+                            <span class="error" id="conf_password_error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_elt ">
+                    <button type="submit" class="submit">Create Account</button>
+                    <p class="login">Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

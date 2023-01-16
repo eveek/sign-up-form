@@ -1,0 +1,146 @@
+*, html, ::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body{
+    /* background-color: aquamarine; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.body .cont_bg{
+    flex-basis: 40%;
+    background: url(./images/form_bg.jpg) no-repeat;
+    background-size: cover;
+    position: static;
+}
+
+.body .cont_bg .logo_bg{
+    background-color: rgba(0, 0, 0, 0.515);
+    width: 100%;
+    height: 10em;
+    margin-top: 20em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body .cont_bg .logo_bg span{
+    font-size: 120px;
+    padding-top: 25px;
+    font-family:'Norse', 'Arial Narrow', Arial, sans-serif
+}
+
+.body .cont_form{
+    flex-basis: 60%;
+    background-color: rgb(250, 251, 251);
+    padding-top: 100px;
+}
+
+.body .cont_form .form_elt{
+    padding: 50px;
+}
+
+.body .cont_form .first{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body .cont_form .first p{
+    width: 85%;
+    line-height: 35px;
+}
+
+.body .cont_form .second{
+    width: 100%;
+    background-color: white;
+    height: 350px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    box-shadow: 0px 5px 7px 1px rgba(105, 105, 105, 0.236);
+}
+
+/* FORM */
+.form_head{
+    font-size: 30px;
+    font-weight: 550;
+    margin-bottom: 30px;
+}
+
+.sum_form{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.sum_form input{
+    width: 16vw;
+    height: 30px;
+    border: solid rgb(227, 223, 223);
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.sum_form p{
+    font-size: 13px;
+    color: rgb(115, 114, 114);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.sum_form span{
+    position: absolute;
+    height: 20px;
+    font-size: 15px;
+    color: red;
+}
+
+.sum_form input:focus{
+    box-shadow: 2px 2px 5px rgba(72, 71, 71, 0.343);
+}
+
+.sum_form input:invalid{
+    border-color: red;
+}
+
+.sum_form input:valid{
+    border-color: green;
+}
+
+.sum_form input[type="password"].unmatch{
+    border-color: red;
+}
+
+.submit{
+    padding: 15px 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(88, 109, 88);
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.login{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.login a{
+    color: rgb(88, 109, 88);
+    text-decoration: none;
+}
